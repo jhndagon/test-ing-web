@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumerosRomanosService } from '../numeros-romanos.service';
 
 @Component({
   selector: 'app-numeros-romanos',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumerosRomanosComponent implements OnInit {
 
-  constructor() { }
+  numero = "";
+
+  constructor(private numeroRomano: NumerosRomanosService) { }
 
   ngOnInit() {
   }
